@@ -1,1 +1,2 @@
 # BlindTypingTrainer
+Hi
