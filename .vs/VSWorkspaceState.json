@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\VSproj"
+    "\\VSproj",
+    "\\VSproj\\BTT"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\VSproj\\BTT\\Main.cpp",
   "PreviewInSolutionExplorer": false
 }
