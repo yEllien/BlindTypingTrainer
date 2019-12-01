@@ -2,6 +2,7 @@
 #include "Text.h"
 #include "stdio.h"
 #include "conio.h"
+#include <iomanip>
 #include <chrono>	
 using namespace std;
 
@@ -18,9 +19,8 @@ int main()
 
 	txt.loadText(fn);
 
-
 	cout << txt.getText();
-	time_t t = time(0); 
+	txt.startTimer();
 	while (i != -1) {
 		input = _getch();
 		i = txt.check(input);
@@ -28,8 +28,8 @@ int main()
 		if (i == 0) system("color 4");
 		system("color 7");
 		system("cls");
-		cout << txt.getText();
-		cout << "    : wps " << 
+
+		cout << txt.getText() << "\n " <<"Wpm :" << fixed <<setprecision(4) << txt.wordsPerSecond()<<"		Errors:"<<txt.errors;
 	}
 
 
